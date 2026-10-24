@@ -1,0 +1,680 @@
+﻿
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raíces Familiares | Interculturalidad UNI</title>
+    <link rel="stylesheet" href="/estilos.css">
+</head>
+<body>
+
+    <header>
+        <h1>Raíces Familiares</h1>
+        <p>Conociendo nuestra historia, identidad y diversidad cultural.</p>
+    </header>
+
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav id="menu-principal" aria-label="Navegación principal">
+        <a href="#inicio">Inicio</a>
+        <a href="#memoria">Memoria familiar</a>
+        <a href="#migracion">Migración</a>
+        <a href="#tradiciones">Tradiciones</a>
+        <a href="#diversidad">Diversidad</a>
+        <a href="#comparacion">Comparación</a>
+    </nav>
+
+
+    <main>
+
+        <!-- BOTÓN FLOTANTE PARA VOLVER AL INICIO -->
+        <button id="volver-arriba"
+                type="button"
+                aria-label="Volver al inicio"
+                title="Volver al inicio"
+                hidden>
+            ↑
+        </button>
+
+
+        <!-- PORTADA -->
+        <section id="inicio" class="portada">
+            <div class="portada-contenido">
+                <span class="etiqueta-portada">
+                    Proyecto de Interculturalidad | UNI
+                </span>
+
+                <h2>Nuestras raíces, nuestra identidad</h2>
+
+                <p>
+                    Detrás de cada familia existe una historia llena de
+                    recuerdos, tradiciones y experiencias. Te invitamos
+                    a descubrir cómo nuestras raíces familiares reflejan
+                    la riqueza cultural y la diversidad de Nicaragua.
+                </p>
+
+                <a href="#memoria" class="boton-explorar">
+                    Explorar nuestras familias
+                </a>
+            </div>
+
+            <div class="estadisticas-portada">
+                <div class="dato-portada">
+                    <strong>5</strong>
+                    <span>Familias participantes</span>
+                </div>
+                <div class="dato-portada">
+                    <strong>4</strong>
+                    <span>Generaciones por explorar</span>
+                </div>
+                <div class="dato-portada">
+                    <strong>1</strong>
+                    <span>Identidad intercultural</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- MEMORIA FAMILIAR -->
+        <section id="memoria">
+            <h2>Memoria familiar</h2>
+            <p>
+                Conoce la historia de nuestras familias a través
+                de sus genogramas etnográficos, explorando
+                cuatro generaciones.
+            </p>
+
+            <div class="contenedor-familias">
+
+                <article class="tarjeta-familia">
+                    <div class="avatar">JR</div>
+                    <h3>José David Rodríguez Zelaya</h3>
+                    <button type="button" onclick="abrirFamilia('jose')">
+                        Explorar familia
+                    </button>
+                </article>
+
+                <article class="tarjeta-familia">
+                    <div class="avatar">JE</div>
+                    <h3>Jesly Hassiel Escoto Pineda</h3>
+                    <button type="button" onclick="abrirFamilia('jesly')">
+                        Explorar familia
+                    </button>
+                </article>
+
+                <article class="tarjeta-familia">
+                    <div class="avatar">VO</div>
+                    <h3>Víctor Alfonso Oviedo Arteaga</h3>
+                    <button type="button" onclick="abrirFamilia('victor')">
+                        Explorar familia
+                    </button>
+                </article>
+
+                <article class="tarjeta-familia">
+                    <div class="avatar">AM</div>
+                    <h3>Ashling Michelle Meza Sandigo</h3>
+                    <button type="button" onclick="abrirFamilia('ashling')">
+                        Explorar familia
+                    </button>
+                </article>
+
+                <article class="tarjeta-familia">
+                    <div class="avatar">BM</div>
+                    <h3>Britanny Isabella Moreno Sandino</h3>
+                    <button type="button" onclick="abrirFamilia('britanny')">
+                        Explorar familia
+                    </button>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- MIGRACIÓN -->
+        <section id="migracion" class="seccion-cultural">
+            <div class="encabezado-seccion">
+                <span class="etiqueta-cultural">Nuestra historia</span>
+                <h2>Migración y raíces familiares</h2>
+                <p>
+                    Los movimientos de las familias entre comunidades,
+                    municipios y países forman parte de nuestra identidad.
+                    Cada desplazamiento puede traer nuevas costumbres,
+                    experiencias y formas de convivencia.
+                </p>
+            </div>
+
+            <div class="cuadricula-cultural">
+                <article class="tarjeta-cultural">
+                    <div class="icono-cultural">🏡</div>
+                    <h3>Lugar de origen</h3>
+                    <p>
+                        Conocer de dónde provienen nuestros antepasados
+                        nos ayuda a comprender nuestra historia familiar.
+                    </p>
+                </article>
+
+                <article class="tarjeta-cultural">
+                    <div class="icono-cultural">🧭</div>
+                    <h3>Movimientos familiares</h3>
+                    <p>
+                        Las familias pueden trasladarse por motivos
+                        educativos, laborales, económicos o personales.
+                    </p>
+                </article>
+
+                <article class="tarjeta-cultural">
+                    <div class="icono-cultural">🤝</div>
+                    <h3>Encuentro de culturas</h3>
+                    <p>
+                        La migración favorece el intercambio de
+                        conocimientos, tradiciones y experiencias.
+                    </p>
+                </article>
+            </div>
+
+            <div class="nota-investigacion">
+                <strong>Investigación familiar:</strong>
+                Próximamente se incorporarán los lugares de origen
+                y movimientos migratorios documentados de las cinco familias.
+            </div>
+        </section>
+
+        <!-- TRADICIONES -->
+        <section id="tradiciones" class="seccion-cultural fondo-cultural">
+            <div class="encabezado-seccion">
+                <span class="etiqueta-cultural">Herencia cultural</span>
+                <h2>Tradiciones que nos unen</h2>
+                <p>
+                    Las tradiciones transmitidas entre generaciones
+                    conservan recuerdos, valores y prácticas que
+                    fortalecen nuestra identidad.
+                </p>
+            </div>
+
+            <div class="cuadricula-cultural">
+                <article class="tarjeta-cultural">
+                    <div class="icono-cultural">🍲</div>
+                    <h3>Gastronomía</h3>
+                    <p>
+                        Las recetas familiares conservan conocimientos
+                        y costumbres transmitidos por nuestros mayores.
+                    </p>
+                </article>
+
+                <article class="tarjeta-cultural">
+                    <div class="icono-cultural">🎶</div>
+                    <h3>Música y celebraciones</h3>
+                    <p>
+                        Las festividades y expresiones musicales
+                        representan formas de convivencia cultural.
+                    </p>
+                </article>
+
+                <article class="tarjeta-cultural">
+                    <div class="icono-cultural">📖</div>
+                    <h3>Relatos familiares</h3>
+                    <p>
+                        Las historias y enseñanzas de nuestros
+                        antepasados forman parte de la memoria colectiva.
+                    </p>
+                </article>
+            </div>
+
+            <div class="nota-investigacion">
+                <strong>Memoria cultural:</strong>
+                Este espacio se completará con las tradiciones
+                documentadas por los integrantes del proyecto.
+            </div>
+        </section>
+
+        <!-- DIVERSIDAD -->
+        <section id="diversidad" class="seccion-cultural">
+            <div class="encabezado-seccion">
+                <span class="etiqueta-cultural">Identidad intercultural</span>
+                <h2>Diversidad que nos fortalece</h2>
+                <p>
+                    Cada familia posee experiencias, conocimientos
+                    y costumbres particulares. Reconocer esas diferencias
+                    nos permite construir una convivencia basada en el respeto.
+                </p>
+            </div>
+
+            <div class="cuadricula-cultural">
+                <article class="tarjeta-cultural">
+                    <div class="icono-cultural">🌎</div>
+                    <h3>Diversidad de orígenes</h3>
+                    <p>
+                        Las distintas procedencias familiares
+                        enriquecen nuestra comprensión de la sociedad.
+                    </p>
+                </article>
+
+                <article class="tarjeta-cultural">
+                    <div class="icono-cultural">💬</div>
+                    <h3>Saberes y experiencias</h3>
+                    <p>
+                        Las generaciones transmiten conocimientos
+                        que pueden cambiar y adaptarse con el tiempo.
+                    </p>
+                </article>
+
+                <article class="tarjeta-cultural">
+                    <div class="icono-cultural">❤️</div>
+                    <h3>Respeto intercultural</h3>
+                    <p>
+                        Valorar las diferencias contribuye a una
+                        sociedad más inclusiva y respetuosa.
+                    </p>
+                </article>
+            </div>
+
+            <div class="nota-investigacion">
+                <strong>Nuestro compromiso:</strong>
+                Reconocer y valorar la historia de cada familia,
+                sin prejuicios ni estereotipos culturales.
+            </div>
+        </section>
+
+        <!-- COMPARACIÓN INTERCULTURAL -->
+        <section id="comparacion" class="seccion-cultural fondo-cultural">
+
+            <div class="encabezado-seccion">
+                <span class="etiqueta-cultural">
+                    Análisis etnográfico
+                </span>
+
+                <h2>Comparación intercultural de las familias</h2>
+
+                <p>
+                    A partir de los testimonios de cinco familias,
+                    identificamos semejanzas y diferencias en
+                    migración, tradiciones e identidad cultural.
+                </p>
+            </div>
+
+            <div class="estadisticas-comparacion">
+
+                <article class="estadistica-comparacion">
+                    <strong>5</strong>
+                    <span>Familias investigadas</span>
+                </article>
+
+                <article class="estadistica-comparacion">
+                    <strong>5</strong>
+                    <span>Con migración internacional reportada</span>
+                </article>
+
+                <article class="estadistica-comparacion">
+                    <strong>5</strong>
+                    <span>Con vínculos a distintos lugares de Nicaragua</span>
+                </article>
+
+                <article class="estadistica-comparacion">
+                    <strong>5</strong>
+                    <span>Con celebraciones familiares documentadas</span>
+                </article>
+
+            </div>
+
+            <h3 class="subtitulo-comparacion">
+                Patrones culturales compartidos
+            </h3>
+
+            <div class="cuadricula-cultural">
+
+                <article class="tarjeta-cultural">
+                    <div class="icono-cultural">🧭</div>
+                    <h3>Migración familiar</h3>
+                    <p>
+                        Las cinco familias reportan vínculos
+                        migratorios internacionales, aunque
+                        sus experiencias y destinos varían.
+                    </p>
+                </article>
+
+                <article class="tarjeta-cultural">
+                    <div class="icono-cultural">🎉</div>
+                    <h3>Celebraciones familiares</h3>
+                    <p>
+                        En las cinco familias se documentan
+                        celebraciones o reuniones que contribuyen
+                        a mantener los vínculos familiares.
+                    </p>
+                </article>
+
+                <article class="tarjeta-cultural">
+                    <div class="icono-cultural">🌎</div>
+                    <h3>Raíces territoriales</h3>
+                    <p>
+                        Todas las familias presentan antecedentes
+                        vinculados a distintos territorios
+                        de Nicaragua.
+                    </p>
+                </article>
+
+            </div>
+
+            <h3 class="subtitulo-comparacion">
+                Diferencias entre las familias
+            </h3>
+
+            <div class="cuadricula-cultural">
+
+                <article class="tarjeta-cultural">
+                    <div class="icono-cultural">📍</div>
+                    <h3>Procedencia geográfica</h3>
+                    <p>
+                        Las familias presentan raíces en
+                        Masaya, Jinotega, Chinandega,
+                        Tecolostote, Managua y otras regiones.
+                    </p>
+                </article>
+
+                <article class="tarjeta-cultural">
+                    <div class="icono-cultural">⛪</div>
+                    <h3>Tradiciones religiosas</h3>
+                    <p>
+                        Se reportan antecedentes católicos
+                        y evangélicos, así como cambios
+                        religiosos entre generaciones.
+                        Algunos datos no están confirmados.
+                    </p>
+                </article>
+
+                <article class="tarjeta-cultural">
+                    <div class="icono-cultural">🍲</div>
+                    <h3>Gastronomía tradicional</h3>
+                    <p>
+                        Algunas familias mencionan baho,
+                        nacatamales, vigorón, indio viejo
+                        y sopa de queso, entre otros platillos.
+                        No todas aportaron datos gastronómicos.
+                    </p>
+                </article>
+
+            </div>
+
+            <div class="nota-investigacion">
+                <strong>Nota metodológica:</strong>
+                Esta comparación se basa en testimonios
+                familiares. La ausencia de información
+                sobre alguna práctica no significa que
+                esa práctica no exista en una familia.
+                Los registros migratorios no equivalen
+                necesariamente al número de personas.
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- EXPEDIENTE FAMILIAR INTERACTIVO -->
+    <div id="ventana-familia" class="modal" hidden>
+        <div class="modal-contenido expediente-familiar"
+             role="dialog"
+             aria-modal="true"
+             aria-labelledby="titulo-familia">
+
+            <button class="cerrar-modal"
+                    type="button"
+                    onclick="cerrarFamilia()"
+                    aria-label="Cerrar ventana">
+                &times;
+            </button>
+
+            <div class="encabezado-expediente">
+                <span class="etiqueta-cultural">Memoria etnográfica</span>
+                <h2 id="titulo-familia"></h2>
+                <p>
+                    Explora el genograma y los aspectos culturales
+                    de esta historia familiar.
+                </p>
+            </div>
+
+            <!-- PESTAÑAS -->
+            <div class="pestanas-familia" role="tablist"
+                 aria-label="Apartados del expediente familiar">
+
+                <button type="button" class="pestana activa"
+                        id="tab-genograma"
+                        role="tab"
+                        aria-selected="true"
+                        aria-controls="panel-genograma"
+                        onclick="cambiarPestana('genograma')">
+                    🌳 Genograma
+                </button>
+
+                <button type="button" class="pestana"
+                        id="tab-generaciones"
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="panel-generaciones"
+                        onclick="cambiarPestana('generaciones')">
+                    👨‍👩‍👧 Generaciones
+                </button>
+
+                <button type="button" class="pestana"
+                        id="tab-migracion"
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="panel-migracion"
+                        onclick="cambiarPestana('migracion')">
+                    🧭 Migración
+                </button>
+
+                <button type="button" class="pestana"
+                        id="tab-tradiciones"
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="panel-tradiciones"
+                        onclick="cambiarPestana('tradiciones')">
+                    🎶 Tradiciones
+                </button>
+
+                <button type="button" class="pestana"
+                        id="tab-identidad"
+                        role="tab"
+                        aria-selected="false"
+                        aria-controls="panel-identidad"
+                        onclick="cambiarPestana('identidad')">
+                    🤝 Identidad
+                </button>
+            </div>
+
+            <!-- PANEL: GENOGRAMA -->
+            <section id="panel-genograma" class="panel-familia"
+                     role="tabpanel" aria-labelledby="tab-genograma">
+
+                <div class="espacio-genograma">
+                    <h3>Genograma etnográfico</h3>
+                    <p>
+                        Observa las relaciones familiares.
+                        Haz clic en la imagen para ampliarla.
+                    </p>
+
+                    <p id="mensaje-genograma">
+                        Cargando genograma...
+                    </p>
+
+
+                    <img id="imagen-genograma"
+                         alt="Genograma etnográfico familiar"
+                         onclick="ampliarGenograma()"
+                         title="Haz clic para ampliar el genograma"
+                         tabindex="0"
+                         role="button"
+                         hidden>
+
+                </div>
+            </section>
+
+            <!-- PANEL: GENERACIONES -->
+            <section id="panel-generaciones" class="panel-familia"
+                     role="tabpanel" aria-labelledby="tab-generaciones"
+                     hidden>
+
+                <h3>Historia de cuatro generaciones</h3>
+                <p class="introduccion-panel">
+                    Este apartado permitirá comparar los cambios
+                    culturales y familiares entre generaciones.
+                </p>
+
+                <div class="cuadricula-expediente">
+                    <article class="tarjeta-expediente">
+                        <span>01</span>
+                        <h4>Primera generación</h4>
+                        <p>Antepasados más antiguos documentados.</p>
+                        <p class="dato-pendiente">
+                            Investigación pendiente
+                        </p>
+                    </article>
+
+                    <article class="tarjeta-expediente">
+                        <span>02</span>
+                        <h4>Segunda generación</h4>
+                        <p>Historia y experiencias de sus descendientes.</p>
+                        <p class="dato-pendiente">
+                            Investigación pendiente
+                        </p>
+                    </article>
+
+                    <article class="tarjeta-expediente">
+                        <span>03</span>
+                        <h4>Tercera generación</h4>
+                        <p>Transformaciones y continuidad familiar.</p>
+                        <p class="dato-pendiente">
+                            Investigación pendiente
+                        </p>
+                    </article>
+
+                    <article class="tarjeta-expediente">
+                        <span>04</span>
+                        <h4>Cuarta generación</h4>
+                        <p>Memoria e identidad de la generación reciente.</p>
+                        <p class="dato-pendiente">
+                            Investigación pendiente
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- PANEL: MIGRACIÓN -->
+            <section id="panel-migracion" class="panel-familia"
+                     role="tabpanel" aria-labelledby="tab-migracion"
+                     hidden>
+
+                <h3>Origen y movimientos familiares</h3>
+                <p class="introduccion-panel">
+                    Aquí se registrarán los lugares de origen,
+                    desplazamientos y motivos de migración
+                    documentados mediante la investigación.
+                </p>
+
+                <div class="cuadricula-expediente">
+                    <article class="tarjeta-expediente">
+                        <span>🏡</span>
+                        <h4>Lugares de origen</h4>
+                        <p class="dato-pendiente">
+                            Datos por investigar
+                        </p>
+                    </article>
+
+                    <article class="tarjeta-expediente">
+                        <span>🧭</span>
+                        <h4>Movimientos migratorios</h4>
+                        <p class="dato-pendiente">
+                            Datos por investigar
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- PANEL: TRADICIONES -->
+            <section id="panel-tradiciones" class="panel-familia"
+                     role="tabpanel" aria-labelledby="tab-tradiciones"
+                     hidden>
+
+                <h3>Tradiciones y costumbres familiares</h3>
+                <p class="introduccion-panel">
+                    Se documentarán las prácticas culturales
+                    transmitidas y sus cambios entre generaciones.
+                </p>
+
+                <div class="cuadricula-expediente">
+                    <article class="tarjeta-expediente">
+                        <span>🍲</span>
+                        <h4>Gastronomía</h4>
+                        <p class="dato-pendiente">
+                            Datos por investigar
+                        </p>
+                    </article>
+
+                    <article class="tarjeta-expediente">
+                        <span>🎉</span>
+                        <h4>Celebraciones</h4>
+                        <p class="dato-pendiente">
+                            Datos por investigar
+                        </p>
+                    </article>
+
+                    <article class="tarjeta-expediente">
+                        <span>📖</span>
+                        <h4>Relatos y saberes</h4>
+                        <p class="dato-pendiente">
+                            Datos por investigar
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- PANEL: IDENTIDAD -->
+            <section id="panel-identidad" class="panel-familia"
+                     role="tabpanel" aria-labelledby="tab-identidad"
+                     hidden>
+
+                <h3>Identidad y diversidad cultural</h3>
+                <p class="introduccion-panel">
+                    Este apartado analizará los valores,
+                    saberes y experiencias culturales
+                    identificados en la familia.
+                </p>
+
+                <div class="cuadricula-expediente">
+                    <article class="tarjeta-expediente">
+                        <span>❤️</span>
+                        <h4>Valores familiares</h4>
+                        <p class="dato-pendiente">
+                            Datos por investigar
+                        </p>
+                    </article>
+
+                    <article class="tarjeta-expediente">
+                        <span>💬</span>
+                        <h4>Lenguaje y saberes</h4>
+                        <p class="dato-pendiente">
+                            Datos por investigar
+                        </p>
+                    </article>
+
+                    <article class="tarjeta-expediente">
+                        <span>🌎</span>
+                        <h4>Interculturalidad</h4>
+                        <p class="dato-pendiente">
+                            Datos por investigar
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>
+            Universidad Nacional de Ingeniería | Grupo 2M7-SIS-S
+        </p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
+
